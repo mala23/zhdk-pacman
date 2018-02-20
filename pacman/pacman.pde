@@ -4,6 +4,7 @@ int         curTime = 0;
 int         animSpeed = 5;
 int         animDuration = 2000;
 boolean     drawFlag=false;
+
  
 void setup()
 {
@@ -29,8 +30,13 @@ void draw()
     PVector dir = PVector.sub(endPos,startPos);
  
     PVector pos = PVector.add( startPos , PVector.mult(dir,normTime));
-    ellipse(pos.x,pos.y, 80,80);
+    ellipse(pos.x,pos.y, 80, 80);
+
+    if(pos.x < 110) {
+      ellipse(100, 110, 20, 20);
+    }
   }
+
  
 }
  

@@ -34,21 +34,22 @@ void draw()
  
 }
  
-void mousePressed()
+void mouseClicked()
 {
-  drawFlag = true;
-  curTime = 0;
-  startPos.set(mouseX,mouseY,0);
-  endPos = startPos.get();
+  if (mouseButton == LEFT) {
+    drawFlag = true;
+    curTime = 0;
+    startPos.set(100,100,0);
+    endPos = startPos.get();
+  }
+  if (mouseButton == RIGHT) {
+    drawFlag = false;
+    println("released");
+  }
 }
  
 void mouseDragged()
 {
-  endPos.set(mouseX,mouseY,0);
+  endPos.set(700,100,0);
 }
  
-void mouseReleased()
-{
-  drawFlag = false;
-  println("released");
-}

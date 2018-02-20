@@ -28,10 +28,10 @@ void draw()
   {
     // calculate the position of the circle on the line
     PVector dir = PVector.sub(endPos,startPos);
- 
+
     PVector pos = PVector.add( startPos , PVector.mult(dir,normTime));
     ellipse(pos.x,pos.y, 80, 80);
-
+ 
     if(pos.x < 165) {
       ellipse(165, 100, 20, 20);
     }
@@ -54,8 +54,6 @@ void draw()
       ellipse(490, 100, 20, 20);
     }
   }
-
- 
 }
  
 void mouseClicked()

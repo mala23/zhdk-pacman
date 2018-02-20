@@ -29,7 +29,7 @@ void draw()
     PVector dir = PVector.sub(endPos,startPos);
  
     PVector pos = PVector.add( startPos , PVector.mult(dir,normTime));
-    ellipse(pos.x,pos.y, 20,20);
+    ellipse(pos.x,pos.y, 40,40);
   }
  
 }

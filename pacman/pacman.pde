@@ -38,6 +38,21 @@ void draw()
     if(pos.x < 220) {
       ellipse(220, 100, 20, 20);
     }
+    if(pos.x < 275) {
+      ellipse(275, 100, 20, 20);
+    }
+    if(pos.x < 330) {
+      ellipse(330, 100, 20, 20);
+    }
+    if(pos.x < 385) {
+      ellipse(385, 100, 20, 20);
+    }
+    if(pos.x < 435) {
+      ellipse(435, 100, 20, 20);
+    }
+    if(pos.x < 490) {
+      ellipse(490, 100, 20, 20);
+    }
   }
 
  

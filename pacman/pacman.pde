@@ -50,6 +50,6 @@ void mouseClicked()
  
 void mouseDragged()
 {
-  endPos.set(700,100,0);
+  endPos.set(380,100,0);
 }
  

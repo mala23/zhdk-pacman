@@ -29,7 +29,7 @@ void draw()
     PVector dir = PVector.sub(endPos,startPos);
  
     PVector pos = PVector.add( startPos , PVector.mult(dir,normTime));
-    ellipse(pos.x,pos.y, 40,40);
+    ellipse(pos.x,pos.y, 80,80);
   }
  
 }
@@ -40,16 +40,10 @@ void mouseClicked()
     drawFlag = true;
     curTime = 0;
     startPos.set(100,100,0);
-    endPos = startPos.get();
+    endPos.set(540,100,0);
   }
   if (mouseButton == RIGHT) {
     drawFlag = false;
     println("released");
   }
 }
- 
-void mouseDragged()
-{
-  endPos.set(380,100,0);
-}
- 

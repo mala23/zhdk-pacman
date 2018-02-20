@@ -32,8 +32,11 @@ void draw()
     PVector pos = PVector.add( startPos , PVector.mult(dir,normTime));
     ellipse(pos.x,pos.y, 80, 80);
 
-    if(pos.x < 110) {
-      ellipse(100, 110, 20, 20);
+    if(pos.x < 165) {
+      ellipse(165, 100, 20, 20);
+    }
+    if(pos.x < 220) {
+      ellipse(220, 100, 20, 20);
     }
   }
 
